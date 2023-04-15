@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import fonts from '@/helpers/fonts'
 
 export default function Document() {
 
