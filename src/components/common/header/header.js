@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link';
-// import MobileMenu from "@/components/mobileMenu";
+// import MobileMenu from "@/components/common/mobileMenu/mobileMenu";
 import { useDispatch } from 'react-redux';
-import { setMobileMenuOpen } from "@/store/slices/mobileMenuSlice";
+import { setMobileMenuOpen } from "@/slices/mobileMenuSlice";
 
 export default function Header() {
 
