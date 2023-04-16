@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux'; // updated
-import { selectMobileMenuOpen, setMobileMenuOpen } from '@/store/slices/mobileMenuSlice'; //updated
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
+import { useRouter } from 'next/router'
+import { selectMobileMenuOpen, setMobileMenuOpen } from '@/slices/mobileMenuSlice'; //updated
 import Image from "next/image";
 import Link from 'next/link'
-import fonts from '@/helpers/fonts'
-import { useRouter } from 'next/router'
+
 
 export default function MobileMenu() {
 

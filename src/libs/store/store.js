@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { createWrapper } from 'next-redux-wrapper';
-import { mobileMenuSlice } from '@/store/slices/mobileMenuSlice';
+import { mobileMenuSlice } from '@/slices/mobileMenuSlice';
 
 const makeStore = () =>
     configureStore({

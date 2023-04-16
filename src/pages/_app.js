@@ -3,8 +3,8 @@ import { useRouter } from 'next/router'
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import '@/styles/globals.scss'
 import { Provider } from 'react-redux';
-import { wrapper } from '@/store/store';
-import fonts from '@/helpers/fonts'
+import { wrapper } from '@/libs/store/store';
+import fonts from '@/libs/constants/fonts'
 
 export default function App({ Component, ...rest }) {
 
@@ -13,9 +13,9 @@ export default function App({ Component, ...rest }) {
     const { store, props } = wrapper.useWrappedStore(rest);
     const { pageProps } = props;
 
-    useEffect(() => {
-
-    }, [router.events])
+    // useEffect(() => {
+    //     //client code here to run for every page. For example: Facebook Pixel
+    // }, [ router.events ])
 
     return (
         <Provider store={store}>
