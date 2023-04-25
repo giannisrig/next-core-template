@@ -3,8 +3,8 @@ import {useEffect, useState} from 'react';
 import { useRouter } from 'next/router'
 import { selectMobileMenuOpen, setMobileMenuOpen } from '@/slices/mobileMenuSlice';
 import { selectOverlayActive } from '@/slices/overlaySlice';
-import MobileNavigation from '@/components/common/mobileMenu/mobileNavigation';
-import CloseMobileMenu from '@/components/common/mobileMenu/closeMobileMenu';
+import MobileNavigation from '@/components/common/mobileMenu/MobileNavigation';
+import CloseMobileMenu from '@/components/common/mobileMenu/CloseMobileMenu';
 
 
 export default function MobileMenu() {

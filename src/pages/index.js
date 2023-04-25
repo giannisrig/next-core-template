@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import Layout from "@/components/layout/layout";
+import Layout from "@/components/layout/Layout";
 import Head from 'next/head';
+import PageSectionContainer from '@/components/common/section/PageSectionContainer';
 
 export default function Home() {
     return (
@@ -9,8 +10,8 @@ export default function Home() {
                 <title>NextJS: Starter Template | Demo Project by Giannis Riganas</title>
                 <meta name="description" content="A starter demo app built with Next.js" />
             </Head>
-            <div className="container">
-                <div className='flex flex-col items-center justify-center gap-30px p-24 w-full'>
+            <PageSectionContainer>
+                <div className='flex flex-col items-center justify-center gap-30px w-full'>
                     <div className="next-logo relative flex place-items-center items-center justify-center w-[300px] h-[300px] after:absolute after:-z-20 after:h-[240px] after:w-[240px] after:translate-x-2/4 after:right-1/2 after:blur-2xl after:content-['']">
                         <Image
                             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
@@ -60,7 +61,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </PageSectionContainer>
         </Layout>
     )
 }
