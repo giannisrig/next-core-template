@@ -1,14 +1,11 @@
 export default function MobileNavigation() {
-
-    return (
-        <nav className="flex flex-col px-30px py-30px grow overflow-y-auto">
-            <ul className="flex flex-col gap-10px">
-                <li>
-                    <a href="#">
-                        Menu Item
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    )
+  return (
+    <nav className="flex grow flex-col overflow-y-auto px-30px py-30px">
+      <ul className="flex flex-col gap-10px">
+        <li>
+          <a href="#">Menu Item</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
