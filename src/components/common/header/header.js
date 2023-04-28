@@ -1,32 +1,38 @@
 import Image from "next/image";
 import MobileMenu from "@/components/common/mobileMenu/MobileMenu";
 import HamburgerButton from "@/components/common/mobileMenu/HamburgerButton";
+import Logo from "@/components/common/header/Logo";
 
 export default function Header() {
   return (
     <>
-      <header className="z-10 w-full p-8 text-sm">
+      <header className="sticky top-0 z-10 w-full border-b border-bleached py-6 text-sm backdrop-blur-lg">
         <div className="container">
           <div className="flex w-full items-center justify-between">
-            <a
-              href="https://github.com/giannisrig/next-core-template"
-              target="_blank"
-              className="static flex flex w-max items-center justify-center gap-10px rounded-xl border border-b border-amethyst bg-mirage p-4 text-pink backdrop-blur-2xl "
-            >
-              <Image
-                src="/github.svg"
-                alt="Github Logo"
-                className="invert"
-                width={20}
-                height={20}
-                priority
-              />
-              <span>
-                View repository on&nbsp;
-                <code className="font-mono font-bold">Github</code>
-              </span>
-            </a>
-            <HamburgerButton />
+            <div className="flex items-center gap-20px">
+              <Logo />
+              <div className="h-[20px] w-[2px] bg-bleached" />
+              <a
+                href="https://github.com/giannisrig/next-core-template"
+                target="_blank"
+                className="flex items-center gap-5px rounded-full border border-bleached bg-mirage px-10px py-7px transition-colors duration-200 hover:border-green hover:text-green"
+              >
+                <Image
+                  src="/github.svg"
+                  alt="Github Logo"
+                  width={18}
+                  height={18}
+                  priority
+                />
+                <span className="hidden font-secondary text-sm mdl:block">
+                  View on github
+                </span>
+              </a>
+            </div>
+
+            <div className="flex items-center gap-20px">
+              <HamburgerButton />
+            </div>
           </div>
         </div>
       </header>
